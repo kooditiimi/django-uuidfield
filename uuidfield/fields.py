@@ -5,7 +5,7 @@ from django.db.models import Field
 try:
     from django.utils.encoding import smart_unicode
 except ImportError:
-    from django.utils.encoding import smart_text as smart_unicode
+    from django.utils.encoding import smart_str as smart_unicode
 
 try:
     # psycopg2 needs us to register the uuid type
